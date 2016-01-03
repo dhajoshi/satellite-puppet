@@ -41,4 +41,4 @@ module SatellitePuppet
   def self.config
     YAML.load(File.read 'etc/sat-simple-config.yml')
   end
-
+end

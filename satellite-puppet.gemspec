@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = SatellitePuppet::VERSION
   spec.authors       = ["Dhaval Joshi"]
   spec.email         = ["d.joshi84@gmail.com"]
-  spec.summary       = %q{TODO: From GIT repository upload puppet module to satellite repo}
-  spec.description   = %q{TODO: Using puppet-blacksmith we can tag puppet module and directly push to satellite repository .}
+  spec.summary       = %q{From GIT repository upload puppet module to satellite repo}
+  spec.description   = %q{Using puppet-blacksmith we can tag puppet module and directly push to satellite repository .}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rest-client"
   spec.add_development_dependency "json"
-  spec.add_development_dependency "yaml"
+#  spec.add_development_dependency "yaml"
   spec.add_development_dependency "puppet-blacksmith"
 end

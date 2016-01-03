@@ -42,7 +42,7 @@ module SatellitePuppet
       url += "#{delete_id}"
 
       call_rest_method('delete_id', url, http_method, args = nil)
-      puts "SUCCESS..!!
+      puts "SUCCESS..!!"
     end
   end
 end
