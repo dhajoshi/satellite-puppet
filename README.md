@@ -18,29 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-- Clone above repository ( currently i dont have gem )
-- create new module ( puppet generate dj-testing )
-- Update Rakefile with below contents ( make sure you have required gems installed and RUBYLIB path is set )
-- 
-`
-require 'puppetlabs_spec_helper/rake_tasks' # needed for some module packaging tasks
-require 'puppet_blacksmith/rake_tasks'
-require 'satellite_puppet/rake_tasks'
-`
-- create "etc/sat-simple-config.yml" file with below contents
-
-`
-sat_username: "admin"
-sat_password: "changeme"
-sat_server: "your satellite server"
-`
-
-now once your puppet module is ready, you can run task.
-
-rake satellite:upload("repo_id")  ==>  Pass repository ID
-
-and it will upload module for you ...!!!!
-
+Coming Soon..!!
 
 
 ## Contributing
