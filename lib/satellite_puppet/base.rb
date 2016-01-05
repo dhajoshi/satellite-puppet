@@ -24,9 +24,15 @@ module SatellitePuppet
     def call_rest_method(method_name, rest_url, http_method, args)
       args = args.to_json if args
       begin
-        JSON.parse RestClient.send(http_method, rest_url, args)
-      rescue JSON::ParserError
-        ''
+        RestClient::Request.new(
+          :method     => http_method,
+          :url        => rest_url,
+          :headers    => { :accept => :json, :content_type => :json },
+          :verify_ssl => false,
+          :payload    => args
+          ).execute
+      rescue => e
+        puts e.response
       end
     end
 
