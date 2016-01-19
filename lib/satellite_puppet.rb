@@ -6,6 +6,7 @@ require 'satellite_puppet/version'
 require 'satellite_puppet/base'
 require 'satellite_puppet/repositories'
 require 'satellite_puppet/rake_tasks'
+require 'satellite_puppet/organizations'
 
 module SatellitePuppet
   def self.sat_server=(server)
