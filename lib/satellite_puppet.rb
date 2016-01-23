@@ -33,6 +33,10 @@ module SatellitePuppet
     @sat_password ||= config['sat_password']
   end
 
+  def self.sat_content_view
+    @sat_content_view ||= config['sat_content_view']
+  end
+
   def self.base_url
     "https://#{sat_username}:#{sat_password}@#{sat_server}/katello/api"
   end

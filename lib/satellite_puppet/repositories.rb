@@ -3,7 +3,8 @@ module SatellitePuppet
 
     DEFINED_METHODS = {
       'content_uploads' => { :http_method => :post, :url_method_name => "content_uploads" },
-      'import_uploads'  => { :http_method => :put, :url_method_name => "import_uploads" }
+      'import_uploads'  => { :http_method => :put, :url_method_name => "import_uploads" },
+      'puppet_modules' =>  { :http_method => :get, :url_method_name => "puppet_modules" }
     }
 
     def uploads(content = nil, upload_id)
