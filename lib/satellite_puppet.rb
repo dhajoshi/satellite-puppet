@@ -38,7 +38,7 @@ module SatellitePuppet
   end
   
   def self.sat_organization_id
-    @sat_organization_id || config['sat_organization_id']
+    @sat_organization_id ||= config['sat_organization_id']
   end
 
   def self.base_url

@@ -25,7 +25,7 @@ module SatellitePuppet
           repo_id = args[:repo_id]
           satellite = SatellitePuppet::Repositories.new("#{repo_id}")
           upload_id = JSON.parse(satellite.content_uploads)["upload_id"]
-          satellite.upload("#{m.name}", upload_id)
+          satellite.upload("#{m.name}", "#{m.author}", upload_id)
           satellite.import_uploads({:upload_ids => ["#{upload_id}"]}.to_json)
           satellite.delete upload_id
           puts "Pushing to remote git repo"

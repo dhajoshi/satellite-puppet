@@ -7,7 +7,7 @@ module SatellitePuppet
       'puppet_modules' =>  { :http_method => :get, :url_method_name => "puppet_modules" }
     }
 
-    def uploads(content = nil, upload_id)
+    def uploads(content = nil, author, upload_id)
       #TODO: make it better
       regex = /^#{author}-#{content}-.*\.tar\.gz$/
       pkg = File.expand_path("pkg")
